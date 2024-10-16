@@ -3,7 +3,7 @@ from PVector import PVector
 class Player:
 
     def __init__(self, x, y):
-        self.possibleImages = ['Images/catBack1.png', 'catBack2.png', 'catFront1.png', 'catFront2.png', 'catLeft1.png',
+        self.possibleImages = ['catBack1.png', 'catBack2.png', 'catFront1.png', 'catFront2.png', 'catLeft1.png',
                           'catLeft2.png', 'catRight1.png', 'catRight2.png']
         self.x = x
         self.y = y
