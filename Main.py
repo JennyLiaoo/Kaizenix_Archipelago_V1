@@ -1,34 +1,61 @@
 from cmu_graphics import *
 from PVector import PVector
 from Player import Player
+from Scene1 import Scene1
 
 
 def onAppStart(app):
-    app.url = 'https://academy.cs.cmu.edu/static/media/project_10.472f439f.jpg'
-    app.player = Player(100, 100)
+    app.player = Player(app.width/2-25, app.height/2-25)
+    app.scene1 = Scene1(0,0, app.player)
+
 
 
 def redrawAll(app):
-    imageWidth, imageHeight = getImageSize(app.url)
-    drawLabel(f'Original ({imageWidth}x{imageHeight})', 125, 75, size=16)
-    drawImage(app.url, 125, 200, align='center')
-
+    app.scene1.redrawAll()
+    app.scene1.updatePlayer(app.player)
     app.player.redrawAll()
 
 
-def onKeyPress(app, key):
-    if (key == 'right'):
-        app.player.add(5, 0)
-    elif (key == 'up'):
-        app.player.add(0, -5)
-    elif (key == 'left'):
-        app.player.add(-5, 0)
-    elif (key == 'down'):
-        app.player.add(0, 5)
+def onStep(app):
+    checkCollisions(app)
 
+
+
+def checkCollisions(app):
+    for obs in app.scene1.obstacles:
+        collide = app.player.checkCollisions(obs)
+        if(collide == 'bottom'):
+            app.scene1.add(0, -5)
+        elif(collide == 'left'):
+            app.scene1.add(5, 0)
+        elif(collide == 'top'):
+            app.scene1.add(0, 5)
+        elif(collide == 'right'):
+            app.scene1.add(-5, 0)
+
+
+
+
+
+
+
+
+def onKeyHold(app, keys):
+    if ('down' in keys):
+        app.scene1.add(0, -5)
+        app.player.changeImage(1)
+    if('up' in keys):
+        app.scene1.add(0, 5)
+        app.player.changeImage(0)
+    if('left' in keys):
+        app.scene1.add(5, 0)
+        app.player.changeImage(2)
+    if ('right' in keys):
+        app.scene1.add(-5, 0)
+        app.player.changeImage(3)
 
 def main():
-    runApp()
+    runApp(width=800, height=500)
 
 
 main()

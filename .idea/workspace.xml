@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c18599d3-5f2b-406a-8a75-5fb15d2a56f6" name="Changes" comment="Images added">
+      <change afterPath="$PROJECT_DIR$/CrossEnemy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Enemy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FollowerEnemy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LineEnemy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Obstacle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scene1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Weapon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PVector.py" beforeDir="false" afterPath="$PROJECT_DIR$/PVector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/Player.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,19 +41,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Player.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.CrossEnemy.executor": "Run",
+    "Python.FollowerEnemy.executor": "Run",
+    "Python.Main.executor": "Run",
+    "Python.Player.executor": "Run",
+    "Python.Scene1.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cmu_graphics/Images" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/cmu_graphics/Images" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -71,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729105151043</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Images added">
+      <option name="closed" value="true" />
+      <created>1729106620421</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729106620421</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
