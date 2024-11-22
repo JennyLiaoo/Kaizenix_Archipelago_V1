@@ -28,11 +28,11 @@ class Scene1:
         self.obstacles.append(obs7)
         self.enemies = []
         enemy1 = LineEnemy(10, 100, 50, 'x', 1, 50)
-        enemy2 = CrossEnemy(250, 100, 50, 'x', 5, 50)
-        enemy3 = FollowerEnemy(300, 150, 50, 50, 2)
+        #enemy2 = CrossEnemy(250, 100, 50, 'x', 5, 50)
+        #enemy3 = FollowerEnemy(300, 150, 50, 50, 2)
         self.enemies.append(enemy1)
-        self.enemies.append(enemy2)
-        self.enemies.append(enemy3)
+        #self.enemies.append(enemy2)
+        #self.enemies.append(enemy3)
 
 
     def updatePlayer(self, player):

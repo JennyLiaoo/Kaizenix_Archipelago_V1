@@ -13,6 +13,8 @@ class FollowerEnemy(Enemy):
         self.canMove = True
         self.disX = 0
         self.disY = 0
+        self.w = size
+        self.h = size
 
     def setPos(self, x, y):
         self.x = x

@@ -9,6 +9,8 @@ class CrossEnemy(LineEnemy):
         self.directionSign = 1
         self.speed = speed
         self.size = size
+        self.w = size
+        self.h = size
 
     # moves the enemy towards the player, where other is the object we are moving towards
     def checkMove(self, other):

@@ -8,6 +8,8 @@ class LineEnemy(Enemy):
         self.directionSign = 1
         self.speed = speed
         self.size = size
+        self.w = size
+        self.h = size
     def checkHit(self):
         pass
 

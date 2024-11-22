@@ -44,15 +44,24 @@ def onKeyHold(app, keys):
     if ('down' in keys):
         app.scene1.add(0, -5)
         app.player.changeImage(1)
+        app.player.direction = 'front'
     if('up' in keys):
         app.scene1.add(0, 5)
         app.player.changeImage(0)
+        app.player.direction = 'back'
     if('left' in keys):
         app.scene1.add(5, 0)
         app.player.changeImage(2)
+        app.player.direction = 'left'
     if ('right' in keys):
         app.scene1.add(-5, 0)
         app.player.changeImage(3)
+        app.player.direction = 'right'
+
+def onKeyPress(app, key):
+    if(key == 'space' and app.player.cooldown == False):
+        app.player.hitAnimation(app.scene1.enemies)
+
 
 def main():
     runApp(width=800, height=500)
